@@ -1,0 +1,57 @@
+@import "variables";
+@mixin active-class($name) {
+  .active-#{$name}{
+    @if($name == "mercury"){
+      border-top-color: $mercury;
+    } @else if($name=="venus"){
+      border-top-color: $venus;
+    } @else if($name=="earth"){
+      border-top-color: $earth;
+    } @else if($name=="mars"){
+      border-top-color: $mars;
+    } @else if($name=="jupiter"){
+      border-top-color: $jupiter;
+    } @else if($name=="saturn"){
+      border-top-color: $saturn;
+    } @else if($name=="uranus"){
+      border-top-color: $uranus;
+    }@else if($name=="neptune"){
+      border-top-color: $neptune;
+    }
+  }
+}
+.nav-container {
+  border-bottom: 2px solid $space-gray;
+  display: flex;
+  align-items: center;
+  nav {
+    display: flex;
+    margin-left: 50%;
+    @include active-class("mercury");
+    @include active-class("venus");
+    @include active-class("earth");
+    @include active-class("mars");
+    @include active-class("jupiter");
+    @include active-class("uranus");
+    @include active-class("neptune");
+    @include active-class("saturn");
+  }
+}
+
+.nav-item {
+   a {
+     text-decoration: none;
+     text-transform: uppercase;
+   }
+  margin-left: 5px;
+  padding: 5px;
+  border-top: solid $black 2px ;
+
+}
+
+
+
+#brand {
+  text-transform: uppercase;
+}
+

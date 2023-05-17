@@ -1,0 +1,55 @@
+$white:#FFFFFF;
+$black:#070724;
+$space-gray:#38384F;
+$light-gray:#838391;
+$light-blue:#419EBB;
+$yellow:#EDA249;
+$purple:#6F2ED6;
+$orange-1:#D14C32;
+$red:#D83A34;
+$orange-2:#CD5120;
+$teal:#1EC2A4;
+$blue:#2D68F0;
+
+@font-face {
+  font-family: "Antonio";
+  src:local("Antonio"),url('./fonts/Antonio-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: "Spartan";
+  src:local("LeagueSpartan"),url('./fonts/LeagueSpartan-VariableFont_wght.ttf');
+}
+
+* {
+  background-color: $black;
+  color: $white;
+}
+h1 {
+  font-family: Antonio,sans-serif;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 103px;
+}
+
+h2 {
+  font-family: Antonio,sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  margin: 0;
+  letter-spacing: -1.5;
+}
+
+h3 {
+  font-family: Spartan,sans-serif;
+  font-size: 12px;
+}
+
+h4 {
+  font-family: Spartan,sans-serif;
+  font-size:11px;
+}
+p{
+  font-family: Spartan,sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+}
